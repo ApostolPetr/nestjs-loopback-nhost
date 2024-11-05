@@ -1,0 +1,9 @@
+{
+  "name": "nhost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@nhost/nhost-js": "^3.1.10"
+  }
+}
