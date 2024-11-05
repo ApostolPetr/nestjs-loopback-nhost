@@ -1,8 +1,12 @@
 import { Injectable } from '@nestjs/common';
+import { FastifyRequest } from 'fastify';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getPing(req: FastifyRequest) {
+    return {
+      greeting: 'Hello!',
+      url: req.url,
+    };
   }
 }

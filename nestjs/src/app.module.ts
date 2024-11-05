@@ -7,6 +7,7 @@ import { MercuriusDriver, MercuriusDriverConfig } from '@nestjs/mercurius';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { PrismaService } from './prisma.service';
+import { PingResolver } from './graphql/ping/ping.resolver';
 
 @Module({
   imports: [
@@ -19,11 +20,12 @@ import { PrismaService } from './prisma.service';
       buildSchemaOptions: {
         dateScalarMode: 'timestamp',
       },
+
     }),
     AuthModule,
     UsersModule,
   ],
   controllers: [AppController],
-  providers: [AppService, PrismaService],
+  providers: [AppService, PrismaService, PingResolver],
 })
 export class AppModule {}

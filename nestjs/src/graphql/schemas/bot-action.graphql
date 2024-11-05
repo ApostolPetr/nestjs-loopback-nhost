@@ -1,9 +1,0 @@
-input BotActionInput {
-  botId: Int!
-  groupId: Int!
-  action: String!
-}
-
-type Mutation {
-  botAction(botAction: BotActionInput): String
-}

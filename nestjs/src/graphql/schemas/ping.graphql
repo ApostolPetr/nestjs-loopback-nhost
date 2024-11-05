@@ -1,0 +1,8 @@
+type Ping {
+  greeting: String!
+  url: String!
+}
+
+type Query {
+  ping: Ping
+}
