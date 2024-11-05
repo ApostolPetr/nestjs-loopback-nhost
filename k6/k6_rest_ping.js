@@ -10,7 +10,6 @@ export const options = {
 
 export default function () {
   const url = 'http://localhost:3000/ping';
-
   const params = {
     headers: {
       'Content-Type': 'application/json',
@@ -18,7 +17,7 @@ export default function () {
   };
 
   // send a post request and save response as a variable
-  const res = http.post(url, payload, params);
+  const res = http.get(url, params);
 
   // check that response is 200
   check(res, {
