@@ -1,0 +1,11 @@
+{
+  "name": "nestjs-loopback-nhost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.lan/bot-lives-matter/nestjs-loopback-nhost.git",
+  "author": "xio4 <mapostol@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/cli": "^10.4.7"
+  }
+}
