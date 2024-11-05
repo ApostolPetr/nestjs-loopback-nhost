@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:../db/db.sqlite"
+}
+
+model SomeEntity {
+  id                Int                @id @default(autoincrement())
+  name              String
+  description       String?
+}
+
+model UserEntity {
+  userId             Int                 @id @default(autoincrement())
+  username           String
+  password           String
+  email              String
+  role               String
+  tokensId           Int?                @unique(map: "sqlite_autoindex_user_entity_1")
+  userTokensEntity UserTokensEntity? @relation(fields: [tokensId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model UserTokensEntity {
+  id           Int          @id @default(autoincrement())
+  refreshToken String?
+  accessToken  String?
+  userEntity  UserEntity?
+}

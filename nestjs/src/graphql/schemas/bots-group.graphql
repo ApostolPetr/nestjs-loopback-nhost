@@ -1,0 +1,28 @@
+type BotsGroup {
+  id: Int!
+  name: String!
+  description: String
+  allCount: Int
+  activeCount: Int
+}
+
+input CreateBotsGroupInput {
+  name: String!
+  description: String
+}
+
+input EditBotsGroupInput {
+  id: Int!
+  name: String
+  description: String
+}
+
+type Query {
+  botsGroups: [BotsGroup]
+}
+
+type Mutation {
+  editBotsGroup(botsGroupInput: EditBotsGroupInput): String
+  createBotsGroup(botsGroupInput: CreateBotsGroupInput): String
+  removeBotsGroup(groupId: Int!): String
+}

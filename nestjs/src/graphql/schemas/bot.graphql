@@ -1,0 +1,32 @@
+type Bot {
+  id: Int!
+  name: String!
+  groupId: Int!
+  description: String
+  status: String
+  config: String
+}
+
+input EditBotInput {
+  id: Int!
+  name: String!
+  description: String
+  config: String
+}
+
+input CreateBotInput {
+  name: String!
+  groupId: Int!
+  description: String
+  config: String
+}
+
+type Query {
+  bots(groupId: Int!): [Bot]
+}
+
+type Mutation {
+  editBot(botInput: EditBotInput): String
+  createBot(botInput: CreateBotInput): String
+  removeBot(botId: Int!): String
+}
