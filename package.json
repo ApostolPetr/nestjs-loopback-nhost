@@ -6,6 +6,7 @@
   "author": "xio4 <mapostol@yandex.ru>",
   "license": "MIT",
   "dependencies": {
+    "@loopback/cli": "^6.1.1",
     "@nestjs/cli": "^10.4.7"
   }
 }
