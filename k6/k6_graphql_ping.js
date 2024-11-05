@@ -9,11 +9,11 @@ export const options = {
 };
 
 export default function () {
-  const url = "http://localhost:3000/ping";
-  const payload = {
+  const url = "http://localhost:3000/graphql";
+  const payload = JSON.stringify({
     query: "query Ping {\n  ping {\n    greeting\n    url\n  }\n}",
     operationName: "Ping",
-  };
+  });
 
   const params = {
     headers: {
