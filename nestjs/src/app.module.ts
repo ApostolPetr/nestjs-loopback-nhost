@@ -14,6 +14,7 @@ import { PingResolver } from './graphql/ping/ping.resolver';
     // ConfigModule.forRoot({ envFilePath: `${process.env.NODE_ENV || ''}.env` }),
     GraphQLModule.forRoot<MercuriusDriverConfig>({
       driver: MercuriusDriver,
+      path: 'v1/graphql',
       graphql: {},
       typePaths: ['./**/*.graphql'],
       graphiql: process.env.NODE_ENV === 'development',
