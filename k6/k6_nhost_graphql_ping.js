@@ -9,10 +9,10 @@ export const options = {
 };
 
 export default function () {
-  const url = "http://localhost:3000/v1/graphql";
+  const url = "http://192.168.31.205:1337/v1/graphql";
   const payload = JSON.stringify({
-    query: "query Ping {\n  ping {\n    greeting\n    url\n  }\n}",
-    operationName: "Ping",
+    query: "query MyQuery {\n  __typename ## Placeholder value\n}\n",
+    operationName: "MyQuery",
   });
 
   const params = {
