@@ -3,10 +3,10 @@
 A comparing of the performance NestJS (rest/graphql) with Loopback4 and Nhost (Hasura API) is presented. Grafana K6 is used as a benchmark.
 
 ## VM Machine specs
-Virtual Environmnent: Proxmox 6.4-4
-CPU family: Intel Xeon E5-2696v3@2.3GHz
-CPU cores: 2
-RAM: 2GB
+* Virtual Environmnent: Proxmox 6.4-4
+* CPU family: Intel Xeon E5-2696v3@2.3GHz
+* CPU cores: 2
+* RAM: 2GB
 
 ## Benchmarks
 ### Ping Rest benchmark
