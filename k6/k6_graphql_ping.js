@@ -11,7 +11,7 @@ export const options = {
 export default function () {
   const url = "http://localhost:3000/v1/graphql";
   const payload = JSON.stringify({
-    query: "query Ping {\n  ping {\n    greeting\n    url\n  }\n}",
+    query: "query Ping {\n  __typename ## Placeholder value\n}\n",
     operationName: "Ping",
   });
 

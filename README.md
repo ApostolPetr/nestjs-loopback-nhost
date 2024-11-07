@@ -97,24 +97,23 @@ And results:
 
 - NestJS GraphQL
 ```
-     checks.........................: 100.00% 1721976 out of 1721976
-     data_received..................: 482 MB  803 kB/s
-     data_sent......................: 398 MB  662 kB/s
-     http_req_blocked...............: avg=83.62Вµs  min=1.74Вµs  med=2.99Вµs   max=235.56ms p(90)=6.81Вµs   p(95)=8.27Вµs  
-     http_req_connecting............: avg=75.5Вµs   min=0s      med=0s       max=229.15ms p(90)=0s       p(95)=0s      
-     http_req_duration..............: avg=348.16ms min=15.84ms med=265.46ms max=59.83s   p(90)=543.7ms  p(95)=592.21ms
-       { expected_response:true }...: avg=348.16ms min=15.84ms med=265.46ms max=59.83s   p(90)=543.7ms  p(95)=592.21ms
-     http_req_failed................: 0.00%   0 out of 1721976
-     http_req_receiving.............: avg=683.44Вµs min=17.37Вµs med=42Вµs     max=369.65ms p(90)=118.32Вµs p(95)=189.96Вµs
-     http_req_sending...............: avg=57.78Вµs  min=7.16Вµs  med=12.13Вµs  max=250.13ms p(90)=52.93Вµs  p(95)=111.47Вµs
+     checks.........................: 99.99%  2951618 out of 2951623
+     data_received..................: 756 MB  1.3 MB/s
+     data_sent......................: 679 MB  1.1 MB/s
+     http_req_blocked...............: avg=64.16Вµs  min=1.61Вµs  med=2.4Вµs    max=286.17ms p(90)=3.48Вµs   p(95)=4.09Вµs  
+     http_req_connecting............: avg=58.48Вµs  min=0s      med=0s       max=286.13ms p(90)=0s       p(95)=0s      
+   вњ“ http_req_duration..............: avg=202.79ms min=10.26ms med=185.96ms max=59.89s   p(90)=264.14ms p(95)=305.01ms
+       { expected_response:true }...: avg=202.69ms min=10.26ms med=185.96ms max=59.68s   p(90)=264.14ms p(95)=305.01ms
+   вњ“ http_req_failed................: 0.00%   5 out of 2951623
+     http_req_receiving.............: avg=878.59Вµs min=0s      med=26.55Вµs  max=273.27ms p(90)=48.89Вµs  p(95)=149.83Вµs
+     http_req_sending...............: avg=46.6Вµs   min=7.03Вµs  med=9.46Вµs   max=173.75ms p(90)=17.5Вµs   p(95)=34.14Вµs 
      http_req_tls_handshaking.......: avg=0s       min=0s      med=0s       max=0s       p(90)=0s       p(95)=0s      
-     http_req_waiting...............: avg=347.42ms min=15.81ms med=265.17ms max=59.83s   p(90)=543.44ms p(95)=590.57ms
-     http_reqs......................: 1721976 2867.705443/s
-     iteration_duration.............: avg=348.48ms min=15.91ms med=265.67ms max=59.96s   p(90)=544.02ms p(95)=592.61ms
-     iterations.....................: 1721976 2867.705443/s
+     http_req_waiting...............: avg=201.87ms min=10.23ms med=185.89ms max=59.89s   p(90)=260.02ms p(95)=294.88ms
+     http_reqs......................: 2951623 4917.887375/s
+     iteration_duration.............: avg=203.25ms min=15.17ms med=186.13ms max=1m0s     p(90)=265.26ms p(95)=307.65ms
+     iterations.....................: 2951623 4917.887375/s
      vus............................: 1000    min=1000               max=1000
      vus_max........................: 1000    min=1000               max=1000
-
 ```
 
-In this test, NestJS GraphQL is 1.8 times faster then Hasura GraphQL.
+In this test, NestJS GraphQL is 3.0 times faster then Hasura GraphQL.
